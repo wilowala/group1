@@ -28,11 +28,27 @@ class Pet(models.Model):
     name = models.CharField(max_length=255)
     user = models.ForeignKey(User, blank=True, null=True, on_delete=models.CASCADE)
     
+# class Appointment(models.Model):
+
+    # user = models.ForeignKey(User, blank=True, null=True, on_delete=models.CASCADE)
+    # age = models.ForeignKey('Pet', on_delete=models.CASCADE)
+    # date = models.DateTimeField(auto_now_add=True)
+
+
+
+
 class Appointment(models.Model):
 
-    user = models.ForeignKey(User, blank=True, null=True, on_delete=models.CASCADE)
-    age = models.ForeignKey('Pet', on_delete=models.CASCADE)
+    pet_owner = models.ForeignKey(Profle, on_delete=models.SET_NULL, null=True)
+    doctor = models.ForeignKey(Profle, related_name='the_vet',on_delete=models.SET_NULL, null=True)
     date = models.DateTimeField(auto_now_add=True)
+    time_booked = models.DateTimeField()
+
+
+   
+   
+    
+    
     
 
     
