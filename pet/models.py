@@ -1,3 +1,4 @@
+import email
 from django.db import models
 
 # Create your models here.
@@ -34,5 +35,12 @@ class Appointment(models.Model):
     age = models.ForeignKey('Pet', on_delete=models.CASCADE)
     date = models.DateTimeField(auto_now_add=True)
     
+class Contact(models.Model):
+    email= models.EmailField(max_length=255)
+    subject= models.CharField(max_length=255)
+    message= models.TextField(max_length=255)
+    
+    def __str__(self):
+        return self.email 
 
     
