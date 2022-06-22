@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def contact_view(request):
-    return HttpResponse("contact app works")
+    return render(request, 'contact/contact.html')
