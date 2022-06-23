@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body, .container-fluid{
+    min-height: 100vh;
+}
+
+/* Registration */
+.form-label, .form-text{
+    display: none !important;
+}
+
+.auth{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#auth{
+    min-height: 100vh !important;
+    min-width: 100vw!important;
+    background: url(/static/assets/register\ \(1\).png) 50% 0 no-repeat fixed;
+}
+
+.mb-3 input{
+    background: rgba(217, 217, 217, 0.05) !important;
+    border: 1px solid #EDECEA !important;
+    border-radius: 20px !important;
+    margin: 4vh 0 !important;
+    width: 31.7vw !important;
+    height: 5.4vh;
+}
+
+.mb-3 input::-webkit-input-placeholder{
+    color: #EDECEA !important;
+    font-family: 'Nunito', sans-serif;
+}
+
+.login form button{
+    background: rgba(237, 236, 234, 0.95);
+    border: 1px solid #EDECEA;
+    border-radius: 20px;
+    width: 31.7vw;
+    height: 5.4vh;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700 !important;
+    font-size: 1.25vw !important;
+}
+
+.login form p{
+    margin: 4vh 0 !important;
+    color: #EDECEA;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1vw !important;
+}
+
+.login form p a{
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 700 !important;
+}
+
+.login form p a:hover{
+    font-size: 125%;
+}
+
+.login h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    font-weight: 700;
+    color: #EDECEA;
+}
