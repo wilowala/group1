@@ -5,7 +5,7 @@ body, .container-fluid{
     min-height: 100vh;
 }
 
-/* Registration */
+/* Registration & Login Page*/
 .form-label, .form-text{
     display: none !important;
 }
