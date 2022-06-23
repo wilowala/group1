@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container" style="background-color:white ;">
+    <div class="row">
+        
+        <a href="/"> <i class="fa fa-home fa-2x" aria-hidden="true" style ="color:#FF0000"></i> GO HOME</a>
+        <div class="col-md-6 mt-4 bg-white prof mr-2 ml-2">
+            <img class="rounded-circle account-img d-block mx-auto" src="{{user.profile.image.url}}"height="125px" width="125px">
+            <h5 class="text-center mt-3">{{user.username}}</h5>
+            <p class="text-center"> {{user.email}}</p>
+            <p class="text-center"> {{user.username}}</p>
+            <p class="text-center"> {{user.phone}}</p>
+            
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+{% endblock %}
