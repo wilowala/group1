@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pet',
     'bootstrap5',
+    'appointments',
 ]
 
 MIDDLEWARE = [
