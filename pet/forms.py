@@ -3,7 +3,6 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from .models import  Profile
 
-
 class SignupForm(UserCreationForm):
     email = forms.EmailField(max_length=254, help_text='Required. Inform a valid email address.')
 
@@ -15,10 +14,4 @@ class UpdateProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
         exclude = ('user', 'email')
-        # fields = ('name',
-        #            'bio',
-        #            'phone',
-        #            'image',
-                   
-        # )
 
